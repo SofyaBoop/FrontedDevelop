@@ -24,7 +24,7 @@
             color: rgb(174, 135, 246)
         }
 
-        .SuperButton {
+        .super-button {
             border-radius: 5px;
             border: none;
             height: 40px;
@@ -33,14 +33,14 @@
             color: azure;
         }
 
-        .first-area {
+        .first-article {
             width: 50%;
             height: auto;
             float: left;
             margin: 20px auto;
         }
 
-        .second-area {
+        .second-article {
             width: 50%;
             height: auto;
             float: right;
@@ -60,34 +60,32 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1 style="font-weight: bolder;">Press</h1>
-            <p style="color:grey;">Get weekly articles in your inbox on how to grow your business</p>
-            <form action="">
-                <input type="text" class="SuperInput" placeholder="Enter your email" name="email" required>
-                <button type="button" class="SuperButton">Notify me</button>
+    <header class="promo">
+            <h1 class="promo__title" style="font-weight: bolder;">Press</h1>
+            <p class="promo__descripyion" style="color:grey;">Get weekly articles in your inbox on how to grow your business</p>
+            <form class="form promo__form" action="">
+                <input type="text" class="super-input form__input" placeholder="Enter your email" name="email" required>
+                <button type="button" class="super-button form__button">Notify me</button>
             </form>
-        </div>
     </header>
-    <article class="first-area">
-        <header>
-           <time class="grey-p">Mar 16, 20</time>
-            <h2 style="font-weight:bolder; font-size:large;">Improve your customer expierence</h2>
+    <article class="first-article">
+        <header class = "first-article__header heading">
+           <time datetime="2020-03-16" class="heading__date">Mar 16, 20</time>
+            <h2 class="heading__title" style="font-weight:bolder; font-size:large;">Improve your customer expierence</h2>
         </header>
-        <p class="grey-p">Cupiditate maioers ullam evenient
+        <p class="first-article__description">Cupiditate maioers ullam evenient
             adipisci in dodloribus nulla minus. Voluptas iusto libero adipisci rem et corporis.
         </p>
-        <footer><a href="#">Cool story here</a></footer>
+        <footer class="first-article__footer footer"><a class="footer__link" href="#">Cool story here</a></footer>
     </article>
-    <article class="second-area">
-        <header> 
-            <p class="grey-p"><time 2020-3-16></time>Mar 16, 2020</p>
-            <h2 style="font-weight:bolder; font-size:large;">Improve your customer expierence</h2></header>
-        <p class="grey-p">Cupiditate maioers ullam evenient
+    <article class="second-article">
+        <header class = "second-article__header heading"> 
+            <time datetime="2020-03-16" class="heading__date">Mar 16, 20</time>
+            <h2 class="heading__title" style="font-weight:bolder; font-size:large;">Improve your customer expierence</h2></header>
+        <p class="second-article__description">Cupiditate maioers ullam evenient
             adipisci in dodloribus nulla minus. Voluptas iusto libero adipisci rem et corporis.
         </p>
-        <footer><a href="#">Cool story here</a></footer>
+        <footer class="second-article__footer footer"><a class="footer__link" href="#">Cool story here</a></footer>
     </article>
 </body>
 </html>
